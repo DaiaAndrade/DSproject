@@ -11,13 +11,16 @@
 		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
 	</head>
 	<body>
+		<!-- navbar -->
 		<nav class="navbar navbar-inverse navbar-static-top">
 			<div class="container-fluid">
 				<!-- Logo-marca -->
-				<div class="navbar-header">
+				<div class="navbar-header"http://getbootstrap.com/components/#navbar-brand-image>
 					<a class="navbar-brand" href="#">TDSW</a>
 				</div>
+				<!-- Links -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<!-- Barra de pesquisa -->
 					<form class="navbar-form navbar-left" role="search">
 						<div class="form-group input-group">
 							<input type="text" class="form-control" placeholder="Search for...">
@@ -26,6 +29,7 @@
 							</span>
 						</div>
 					</form>
+					<!-- Identificação e logout -->
 					<ul class="nav navbar-nav navbar-right">
 						<li><p class="navbar-text">Signed in as <a href="#" class="navbar-link">Mark Otto</a></p></li>
 						<li><p class="navbar-text"><a href="#" class="navbar-link">Logout</a></p></li>
@@ -33,14 +37,21 @@
 				</div>	<!-- /.navbar-collapse -->
 			</div>	<!-- container-fluid -->
 		</nav>
-		<nav>
-			<ul>
-				<li>Menu</li>
-				<li><a href="#">Meus Projetos</a></li>
-				<li><a href="#">Comparar</a></li>
-				<li><a href="#">Download</a></li>
-			</ul>
-		</nav>
+		<div class="container-fluid">
+			<div class="row">
+				<div class="col-md-2">
+					<ul class="nav nav-pills nav-stacked">
+						<li class="navbar-brand active" role="presentation"><span class="glyphicon glyphicon-menu-hamburger" aria-hidden="true"> </span>Menu</li>
+						<li role="presentation"><span class="input-group-btn"><button type="button" class="btn btn-info btn-block">Meus Projetos</button></span></li>
+						<li role="presentation"><span class="input-group-btn"><button type="button" class="btn btn-info btn-block">Comparar</button></span></li>
+						<li role="presentation"><span class="input-group-btn"><button type="button" class="btn btn-info btn-block">Download</button></span></li>
+						<li role="presentation"><a href="#">Meus projetos</a></li>
+						<li role="presentation"><a href="#">Comparar</a></li>
+						<li role="presentation"><a href="#">Download</a></li>
+					</ul>
+				</div>	<!-- col-md-4 -->
+			</div>	<!-- row -->
+		</div>	<!-- container-fluid -->
 
 		<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
