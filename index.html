@@ -13,11 +13,13 @@
 	</head>
 	<body>
 		<!-- navbar -->
-		<nav class="navbar navbar-default navbar-static-top">
+		<nav class="navbar navbar-default navbar-static-top" id="topNavbar">
 			<div class="container-fluid">
 				<!-- Logo-marca -->
-				<div class="navbar-header"http://getbootstrap.com/components/#navbar-brand-image>
-					<a class="navbar-brand" href="#">SIAMES</a>
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">
+						<img alt="brand" src="images/brandLogo2.png">
+					</a>
 				</div>
 				<!-- Links -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -38,20 +40,33 @@
 				</div>	<!-- /.navbar-collapse -->
 			</div>	<!-- container-fluid -->
 		</nav>
+		
 		<div class="container-fluid">
 			<div class="row">
-				<div class="col-md-3" id="mySidebar">
-					<nav class="sidebar">
-						<ul class="sidebar">
-							<li class="Title"><a href="#">Menu</a></li>
-							 <li class="active"><a href="#">Meus Projetos</a></li>
-							 <li class="inactive"><a href="#">Comparar</a></li>
-							 <li class="inactive"><a href="#">Download</a></li>
+				<nav class="navbar navbar-left col-md-3">
+					<div class="container-fluid">
+						<ul class="nav">
+							<li id="Link1"><a class="btn btn-link" href="#">Menu</a>
+								<ul class="nav" id="MenuLinks">
+									<li><a class="btn btn-link" href="#">Meus Projetos</a></li>
+							 		<li><a class="btn btn-link" href="#">Comparar</a></li>
+							 		<li><a class="btn btn-link" href="#">Download</a></li>
+								</ul>
+							</li>
+							<li id="Link2"><a class="btn btn-link" href="#">Perfil</a>
+								<ul class="nav" id="PerfilLinks">
+									<li><a class="btn btn-link" href="#">Meu Perfil</a></li>
+							 		<li><a class="btn btn-link" href="#">Conta</a></li>
+							 		<li><a class="btn btn-link" href="#">Configurações</a></li>
+								</ul>
+							</li>
 						</ul>
-					</nav>
-				</div>	<!-- col-md-2 -->
+					</div>
+				</nav>
 				<div class="col-md-8">
-					Content
+					<div class="jumbotron">
+						Content
+					</div>
 				</div>
 			</div>	<!-- row -->
 		</div>	<!-- container-fluid -->
@@ -60,6 +75,7 @@
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 		<!-- Include all compiled plugins (below), or include individual files as needed -->
 		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="javascript/main.js"></script>
 	</body>
 
 </html>
