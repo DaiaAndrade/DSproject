@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
       <meta charset="utf-8" />
@@ -33,7 +33,7 @@
 				
 					
                     <li>
-                        <a class="active-menu" href="index.html"><i class="fa fa-home fa-2x"></i> Home</a>
+                        <a href="index2.html"><i class="fa fa-home fa-2x"></i> Home</a>
                     </li>               
                     <li>
                         <a href="#"><i class="fa fa-cog fa-2x"></i> Conta<span class="fa arrow"></span></a>
@@ -50,7 +50,7 @@
                         <a href="#"><i class="fa fa-tasks fa-2x"></i> Projetos<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a href="novo.html">Novo</a>
+                                <a class="active-menu" href="#">Novo</a>
                             </li>
                             <li>
                                 <a href="#">Projetos</a>
@@ -73,15 +73,63 @@
             <div id="page-inner">
                 <div class="row">
                     <div class="col-md-12">
-                     <h2>Home</h2>   
-                        <h5>Welcome Mark Otto, Love to see you back. </h5>
+                     <h2>Novo Projeto</h2>   
+                        <h5>Esta é a página de inserção de novo projetos. Avaliou um novo projeto? Insira seu XML aqui. </h5>
                        
                     </div>
                 </div>
                  <!-- /. ROW  -->
                  <hr />
-               
-    </div>
+               <div class="row">
+                <div class="col-md-12">
+                  <div class="panel panel-default">
+                    <div class="panel-heading">
+                        Formulário de inserção
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                          <div class="col-md-12">
+                            <h3>Novo Projeto</h3>
+                            <form role="form">
+                              <div class="form-group">
+                                <label>Nome do Projeto</label>
+                                <input type="text" class="form-control" placeholder="Nome" required />
+                              </div>
+                              <div class="form-group">
+                                <label>Palavras-chave</label> Isso vai nos ajudar a refinar sua pesquisa e classificar seu projeto.
+                                <input class="form-control" placeholder="Ex: matemática intervalar, lógica fuzzy" />
+                                <p class="help-block">Isso vai nos ajudar a refinar sua pesquisa e classificar seu projeto.</p>
+                              </div>
+                              <div class="form-group">
+                                <label>Selecione o Arquivo:</label>
+                                <input type="file" accept=".xml" />
+                              </div>
+                              <div class="form-group">
+                                <label>Descrição</label>
+                                <textarea class="form-control" rows="3" placeholder="Gostaria de dizer alguma coisa sobre esse projeto?" maxlength="200"></textarea>
+                              </div>
+                              <div class="form-group">
+                                <label>Opções:</label>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="1" />Disponibilizar para outros usuários.
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="2" required/>Li e aceito os <a href="#">Termos de Uso</a>.
+                                    </label>
+                                </div>
+                              </div>
+                              <button type="submit" class="btn btn-default">Enviar</button>
+                                 <button type="reset" class="btn btn-primary">Limpar</button>
+                            </form>
+                          </div>
+                        </div>
+                    </div>
+                </div>
+               </div>
+              </div>
              <!-- /. PAGE INNER  -->
             </div>
          <!-- /. PAGE WRAPPER  -->
