@@ -42,7 +42,7 @@
                                 <a href="perfil.html">Perfil</a>
                             </li>
                             <li>
-                                <a href="#">Configurações de Conta</a>
+                                <a class="active-menu" href="config.html">Configurações de Conta</a>
                             </li>
                         </ul>
                       </li>  
@@ -50,7 +50,7 @@
                         <a href="#"><i class="fa fa-tasks fa-2x"></i> Projetos<span class="fa arrow"></span></a>
                         <ul class="nav nav-second-level">
                             <li>
-                                <a class="active-menu" href="#">Novo</a>
+                                <a href="novo.html">Novo</a>
                             </li>
                             <li>
                                 <a href="#">Projetos</a>
@@ -73,63 +73,77 @@
             <div id="page-inner">
                 <div class="row">
                     <div class="col-md-12">
-                     <h2>Novo Projeto</h2>   
-                        <h5>Esta é a página de inserção de novo projetos. Avaliou um novo projeto? Insira seu XML aqui. </h5>
+                     <h2>Configurações de conta</h2>   
+                        <h5>Cansou dos nossos e-mails? Configure-os aqui! </h5>
                        
                     </div>
                 </div>
                  <!-- /. ROW  -->
                  <hr />
-               <div class="row">
-                <div class="col-md-12">
-                  <div class="panel panel-default">
-                    <div class="panel-heading">
-                        Formulário de inserção
-                    </div>
-                    <div class="panel-body">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                            Configurações de Conta
+                      </div>
+                      <div class="panel-body">
                         <div class="row">
-                          <div class="col-md-12">
-                            <h3>Novo Projeto</h3>
+                          <div class="col-md-8">
                             <form role="form">
                               <div class="form-group">
-                                <label>Nome do Projeto</label>
-                                <input type="text" class="form-control" placeholder="Nome" required />
-                              </div>
-                              <div class="form-group">
-                                <label>Palavras-chave</label> Isso vai nos ajudar a refinar sua pesquisa e classificar seu projeto.
-                                <input class="form-control" placeholder="Ex: matemática intervalar, lógica fuzzy" />
-                                <p class="help-block">Isso vai nos ajudar a refinar sua pesquisa e classificar seu projeto.</p>
-                              </div>
-                              <div class="form-group">
-                                <label>Selecione o Arquivo:</label>
-                                <input type="file" accept=".xml" />
-                              </div>
-                              <div class="form-group">
-                                <label>Descrição</label>
-                                <textarea class="form-control" rows="3" placeholder="Gostaria de dizer alguma coisa sobre esse projeto?" maxlength="200"></textarea>
-                              </div>
-                              <div class="form-group">
-                                <label>Opções:</label>
+                                <label>E-mails:</label>
                                 <div class="checkbox">
                                     <label>
-                                        <input type="checkbox" value="1" />Disponibilizar para outros usuários.
+                                        <input type="checkbox" value="" />Receber e-mails de notificação.
                                     </label>
                                 </div>
                                 <div class="checkbox">
                                     <label>
-                                        <input type="checkbox" value="2" required/>Li e aceito os <a href="#">Termos de Uso</a>.
+                                        <input type="checkbox" value=""/>Receber e-mais de parceiros.
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value=""/>Assinar a Newsletter.
+                                    </label>
+                                </div>
+                              </div>
+                              <div class="form-group">
+                                <label>Perfil:</label>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked />Visível para outros usuários.
+                                    </label>
+                                </div>
+                                <div class="radio">
+                                    <label>
+                                        <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2"/>Não visível para outros usuários.
+                                    </label>
+                                </div>
+                              </div>
+                               <div class="form-group">
+                                <label>Outros:</label>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value="" />Permitir que usuários vejam meu e-mail.
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" value=""/>Permitir o uso de minhas informações para fins estatísticos.
                                     </label>
                                 </div>
                               </div>
                               <button type="submit" class="btn btn-default">Limpar</button>
-                                 <button type="reset" class="btn btn-primary">Enviar</button>
+                            <button type="reset" class="btn btn-primary">Salvar</button>
                             </form>
                           </div>
                         </div>
+                      </div>
                     </div>
+                  </div>
                 </div>
-               </div>
-              </div>
+            </div>
              <!-- /. PAGE INNER  -->
             </div>
          <!-- /. PAGE WRAPPER  -->

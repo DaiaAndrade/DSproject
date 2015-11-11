@@ -305,7 +305,7 @@ font-weight: 700;
 	
 }
 .navbar-cls-top {
-	background:#4D4D4D;
+	background:#6BA4E8;
 	border-bottom:none;
 	
 }
@@ -317,11 +317,13 @@ color:#fff;
 }
 
 a.navbar-link:link, a.navbar-link:active, a.navbar-link:visited {
-color: #6ba4e8;
+
+color: #3333FF;
+
 }
-a.navbar-link:hover {
+/*a.navbar-link:hover {
 color: #0B85FF !important;
-}
+}*/
 
 .navbar-default {
 border:0px solid black;
