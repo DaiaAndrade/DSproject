@@ -3,7 +3,7 @@ $("#compareButton").click(function(){
 
 });
 $("#cleanButton").click(function(){
-	$(".collapse").collapse('toggle');
+	$("#projetosSimilares, #comparar").collapse('toggle');
 	$(".row .col-md-12 .panel").show();
 });
 $(document).ready();
