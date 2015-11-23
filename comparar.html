@@ -53,10 +53,10 @@
                       <a href="novo.html">Novo</a>
                     </li>
                     <li>
-                      <a class="active-menu" href="projetos.html">Projetos</a>
+                      <a href="projetos.html">Projetos</a>
                     </li>
                     <li>
-                      <a href="comparar.html">Comparar</a>
+                      <a class="active-menu" href="comparar.html">Comparar</a>
                     </li>
                 </ul>
               </li>  
@@ -71,8 +71,8 @@
           <div id="page-inner">
             <div class="row">
               <div class="col-md-12">
-                <h2>Projetos</h2>   
-                  <h5>Edite e Renomeie seus projetos. </h5>
+                <h2>Comparar</h2>   
+                  <h5>Compare seus projetos. </h5>
                        
               </div>
             </div>
@@ -82,83 +82,93 @@
               <div class="col-md-12">
                 <div class="panel panel-info">
                   <div class="panel-heading">
-                    Lista de Projetos
+                    Selecione o projeto
                   </div>
                   <div class="panel-body">
-                    <div class="table-responsive">
-                      <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                    <div class="row">
+                      <div class="col-md-12">
+                        <form role="form">
+                          <div class="form-group">
+                            <label>Selecione seu projeto:</label>
+                            <select class="form-control">
+                              <option>Aurora</option>
+                              <option>Blue Fenix</option>
+                              <option>jMetrics</option>
+                              <option selected>SIAMES</option>
+                            </select>
+                          </div>
+                          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#projetosSimilares" aria-expanded="false" aria-controls="projetosSimilares">Escolher</button>
+                        </form>
+                      </div>
+                    </div>
+                    <div class="collapse" id="projetosSimilares">
+                      <hr />
+                        <div class="well">
+                          <form role="form">
+                            <div class="form-group">
+                              <label>Selecione um projeto para comparar:</label>
+                              <select class="form-control">
+                                <option selected>Aurora</option>
+                                <option>Blue Fenix</option>
+                                <option>jMetrics</option>
+                              </select>
+                            </div>
+                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#comparar" aria-expanded="false" aria-controls="comparar" id="compareButton">Comparar</button>
+                          </form>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+              <div class="collapse" id="comparar">
+                  <div class="table-responsive">
+                      <table class="table table-striped table-bordered table-hover">
                         <thead>
                           <tr>
-                            <th>Nome do Projeto</th>
-                            <th>Palavras-chave</th>
-                            <th>Tipo</th>
-                            <th></th>
+                            <th colspan="1"></th>
+                            <th colspan="2">SIAMES</th>
+                            <th colspan="2">Aurora</th>
                           </tr>
                         </thead>
                         <tbody>
-                            <tr class="">
-                              <td>SIAMES</td>
-                              <td>Engenharia de Software</td>
-                              <td>Público</td>
-                              <td><a class="editLink" data-toggle="modal" data-target="#myModal" href="#"><i class="fa fa-pencil fa-fw"></i>Editar</td>
+                            <tr>
+                              <th>Número de Classes:</th>
+                              <td colspan="2">284</td>
+                              <td colspan="2">359</td>
                             </tr>
-                            <tr class="">
-                              <td>Blue Fenix</td>
-                              <td>Engenharia de Software</td>
-                              <td>Privado</td>
-                              <td><a class="editLink" data-toggle="modal" data-target="#myModal" href="#"><i class="fa fa-pencil fa-fw"></i>Editar</td>
+                            <tr>
+                              <th>Número de Interfaces:</th>
+                              <td colspan="2">10</td>
+                              <td colspan="2">14</td>
                             </tr>
-                            <tr class="">
-                              <td>Aurora</td>
-                              <td>Engenharia de Software</td>
-                              <td>Público</td>
-                              <td><a class="editLink" data-toggle="modal" data-target="#myModal" href="#"><i class="fa fa-pencil fa-fw"></i>Editar</td>
+                            <tr>
+                              <th>Número de Filhos:</th>
+                              <td colspan="2">456</td>
+                              <td colspan="2">234</td>
                             </tr>
-                            <tr class="">
-                              <td>jMetrics</td>
-                              <td>Engenharia de Software</td>
-                              <td>Privado</td>
-                              <td><a class="editLink" data-toggle="modal" data-target="#myModal" href="#"><i class="fa fa-pencil fa-fw"></i>Editar</td>
+                            <tr>
+                              <th>Número de Métodos:</th>
+                              <td colspan="2">2334</td>
+                              <td colspan="2">3425</td>
+                            </tr>
+                            <tr>
+                              <th>Número de Atributos:</th>
+                              <td colspan="2">165</td>
+                              <td colspan="2">561</td>
+                            </tr>
+                            <tr>
+                              <th>Profundidade da Árvore de Herança:</th>
+                              <td colspan="2">80</td>
+                              <td colspan="2">90</td>
+                            </tr>
+                            <tr>
+                              <th>Linhas de Código:</th>
+                              <td colspan="2">16541</td>
+                              <td colspan="2">51616</td>
                             </tr>
                         </tbody>
                       </table>
+                      <button type="button" id="cleanButton" class="btn btn-primary" data-toggle="collapse" data-target="#comparar" aria-expanded="false" aria-controls="#comparar">Nova Comparação</button>
                     </div>
-                    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-                      <div class="modal-dialog">
-                        <div class="modal-content">
-                          <div class="modal-header">
-                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-                              <h4 class="modal-title" id="myModalLabel">Editar Projeto</h4>
-                          </div>
-                          <div class="modal-body">
-                            <form role="form">
-                              <div class="form-group form-inline">
-                                <label>Nome do Projeto:</label>
-                                <input type="text" class="form-control input-group-lg" />
-                              </div>
-                            <div class="form-group form-inline">
-                                <label>Palavras-chave:</label>
-                                <input type="text" class="form-control input-group-lg" />
-                              </div>
-                            <div class="form-group form-inline">
-                                <label>Tipo:</label>
-                                <label><input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" />Público</label>
-                                <label><input type="radio" name="optionsRadios" id="optionsRadios1" value="option2" />Privado</label>
-                              </div>
-                            <div class="form-group form-inline">
-                                <label>Novo Arquivo:</label>
-                                <input type="file" accept=".xml" />
-                              </div>
-                            </form>
-                          </div>
-                          <div class="modal-footer">
-                            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-                            <button type="submit" class="btn btn-primary">Salvar</button>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                 </div>
               </div>
             </div>
@@ -185,6 +195,7 @@
     </script>
       <!-- CUSTOM SCRIPTS -->
     <script src="assets/js/custom.js"></script>
+    <script src="assets/js/main.js"></script>
     
    
 </body>

@@ -1,8 +1,9 @@
-$("#Link1").click(function(){
-	$("#MenuLinks").animate({height:"toggle"});
-});
+$("#compareButton").click(function(){
+	$(".row .col-md-12 .panel").hide();
 
-$("#Link2").click(function(){
-	$("#PerfilLinks").animate({height:"toggle"});
+});
+$("#cleanButton").click(function(){
+	$(".collapse").collapse('toggle');
+	$(".row .col-md-12 .panel").show();
 });
 $(document).ready();
