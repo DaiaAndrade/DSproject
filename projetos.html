@@ -93,6 +93,7 @@
                             <th>Palavras-chave</th>
                             <th>Tipo</th>
                             <th></th>
+                            <th></th>
                           </tr>
                         </thead>
                         <tbody>
@@ -101,24 +102,28 @@
                               <td>Engenharia de Software</td>
                               <td>Público</td>
                               <td><a class="editLink" data-toggle="modal" data-target="#myModal" href="#"><i class="fa fa-pencil fa-fw"></i>Editar</td>
+                              <td><a class="editLink" data-toggle="modal" data-target="#deleteModal" href="#"><i class="fa fa-trash-o fa-fw"></i>Remover</td>
                             </tr>
                             <tr class="">
                               <td>Blue Fenix</td>
                               <td>Engenharia de Software</td>
                               <td>Privado</td>
                               <td><a class="editLink" data-toggle="modal" data-target="#myModal" href="#"><i class="fa fa-pencil fa-fw"></i>Editar</td>
+                              <td><a class="editLink" data-toggle="modal" data-target="#deleteModal" href="#"><i class="fa fa-trash-o fa-fw"></i>Remover</td>
                             </tr>
                             <tr class="">
                               <td>Aurora</td>
                               <td>Engenharia de Software</td>
                               <td>Público</td>
                               <td><a class="editLink" data-toggle="modal" data-target="#myModal" href="#"><i class="fa fa-pencil fa-fw"></i>Editar</td>
+                              <td><a class="editLink" data-toggle="modal" data-target="#deleteModal" href="#"><i class="fa fa-trash-o fa-fw"></i>Remover</td>
                             </tr>
                             <tr class="">
                               <td>jMetrics</td>
                               <td>Engenharia de Software</td>
                               <td>Privado</td>
                               <td><a class="editLink" data-toggle="modal" data-target="#myModal" href="#"><i class="fa fa-pencil fa-fw"></i>Editar</td>
+                              <td><a class="editLink" data-toggle="modal" data-target="#deleteModal" href="#"><i class="fa fa-trash-o fa-fw"></i>Remover</td>
                             </tr>
                         </tbody>
                       </table>
@@ -154,6 +159,23 @@
                           <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
                             <button type="submit" class="btn btn-primary">Salvar</button>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                              <h4 class="modal-title" id="myModalLabel">Excluir Projeto</h4>
+                          </div>
+                          <div class="modal-body">
+                            Você tem certeza disso?
+                          </div>
+                          <div class="modal-footer">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+                            <button type="submit" class="btn btn-danger">Excluir</button>
                           </div>
                         </div>
                       </div>

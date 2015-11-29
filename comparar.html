@@ -85,38 +85,44 @@
                     Selecione o projeto
                   </div>
                   <div class="panel-body">
-                    <div class="row">
-                      <div class="col-md-12">
-                        <form role="form">
-                          <div class="form-group">
-                            <label>Selecione seu projeto:</label>
-                            <select class="form-control">
-                              <option>Aurora</option>
-                              <option>Blue Fenix</option>
-                              <option>jMetrics</option>
-                              <option selected>SIAMES</option>
-                            </select>
-                          </div>
-                          <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#projetosSimilares" aria-expanded="false" aria-controls="projetosSimilares">Escolher</button>
-                        </form>
+                    <div class="form-group">
+                    <form role="form">
+                      <div class="form-group">
+                        <label>Selecione seu projeto:</label>
+                        <select class="form-control">
+                          <option>Aurora</option>
+                          <option>Blue Fenix</option>
+                          <option>jMetrics</option>
+                          <option selected>SIAMES</option>
+                        </select>
                       </div>
+                    </form>
                     </div>
-                    <div class="collapse" id="projetosSimilares">
-                      <hr />
-                        <div class="well">
-                          <form role="form">
-                            <div class="form-group">
-                              <label>Selecione um projeto para comparar:</label>
-                              <select class="form-control">
-                                <option selected>Aurora</option>
-                                <option>Blue Fenix</option>
-                                <option>jMetrics</option>
-                              </select>
-                            </div>
-                            <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#comparar" aria-expanded="false" aria-controls="comparar" id="compareButton">Comparar</button>
-                          </form>
-                        </div>
+                    <div class="table-responsive">
+                      <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                        <thead>
+                            <tr>
+                              <th>Nome do Projeto:</th>
+                              <th>Selecionar:</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="">
+                              <td>Aurora</td>
+                              <td><label> <input type="radio" value="" /></label></td>
+                          </tr>
+                          <tr class="">
+                              <td>Blue Fenix</td>
+                              <td><label> <input type="radio" value="" /></label></td>
+                          </tr>
+                          <tr class="">
+                              <td>jMetrics</td>
+                              <td><label> <input type="radio" value="" /></label></td>
+                          </tr>
+                        </tbody>
+                      </table>
                     </div>
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#comparar" aria-expanded="false" aria-controls="comparar" id="compareButton">Comparar</button>
                   </div>
                 </div>
               <div class="collapse" id="comparar">
@@ -124,12 +130,17 @@
                       <table class="table table-striped table-bordered table-hover">
                         <thead>
                           <tr>
-                            <th colspan="1"></th>
+                            <th></th>
                             <th colspan="2">SIAMES</th>
                             <th colspan="2">Aurora</th>
                           </tr>
                         </thead>
                         <tbody>
+                            <tr>
+                              <th>Linhas de Código:</th>
+                              <td colspan="2">16541</td>
+                              <td colspan="2">51616</td>
+                            </tr>
                             <tr>
                               <th>Número de Classes:</th>
                               <td colspan="2">284</td>
@@ -141,29 +152,72 @@
                               <td colspan="2">14</td>
                             </tr>
                             <tr>
-                              <th>Número de Filhos:</th>
+                              <th>Número Total de Filhos:</th>
                               <td colspan="2">456</td>
                               <td colspan="2">234</td>
                             </tr>
                             <tr>
-                              <th>Número de Métodos:</th>
+                              <th></th>
+                              <th colspan="2">Média</th>
+                              <th colspan="2">Desvio Padrão</th>
+                            </tr>
+                            <tr>
+                              <th></th>
+                              <td>3,5</td>
+                              <td>2,4</td>
+                              <td>8,3</td>
+                              <td>3</td>
+                            </tr>
+                            <tr>
+                              <th>Número Total de Métodos:</th>
                               <td colspan="2">2334</td>
                               <td colspan="2">3425</td>
                             </tr>
                             <tr>
-                              <th>Número de Atributos:</th>
+                              <th></th>
+                              <th colspan="2">Média</th>
+                              <th colspan="2">Desvio Padrão</th>
+                            </tr>
+                            <tr>
+                              <th></th>
+                              <td>3,5</td>
+                              <td>2,4</td>
+                              <td>8,3</td>
+                              <td>3</td>
+                            </tr>
+                            <tr>
+                              <th>Número Total de Atributos:</th>
                               <td colspan="2">165</td>
                               <td colspan="2">561</td>
                             </tr>
                             <tr>
-                              <th>Profundidade da Árvore de Herança:</th>
+                              <th></th>
+                              <th colspan="2">Média</th>
+                              <th colspan="2">Desvio Padrão</th>
+                            </tr>
+                            <tr>
+                              <th></th>
+                              <td>3,5</td>
+                              <td>2,4</td>
+                              <td>8,3</td>
+                              <td>3</td>
+                            </tr>
+                            <tr>
+                              <th>Profundidade Total da Árvore de Herança:</th>
                               <td colspan="2">80</td>
                               <td colspan="2">90</td>
                             </tr>
                             <tr>
-                              <th>Linhas de Código:</th>
-                              <td colspan="2">16541</td>
-                              <td colspan="2">51616</td>
+                              <th></th>
+                              <th colspan="2">Média</th>
+                              <th colspan="2">Desvio Padrão</th>
+                            </tr>
+                            <tr>
+                              <th></th>
+                              <td>3,5</td>
+                              <td>2,4</td>
+                              <td>8,3</td>
+                              <td>3</td>
                             </tr>
                         </tbody>
                       </table>
