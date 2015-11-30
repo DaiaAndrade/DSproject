@@ -99,30 +99,33 @@
                     </form>
                     </div>
                     <div class="table-responsive">
-                      <table class="table table-striped table-bordered table-hover" id="dataTables-example">
-                        <thead>
-                            <tr>
-                              <th>Nome do Projeto:</th>
-                              <th>Selecionar:</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                          <tr class="">
-                              <td>Aurora</td>
-                              <td><label> <input type="radio" value="" /></label></td>
-                          </tr>
-                          <tr class="">
-                              <td>Blue Fenix</td>
-                              <td><label> <input type="radio" value="" /></label></td>
-                          </tr>
-                          <tr class="">
-                              <td>jMetrics</td>
-                              <td><label> <input type="radio" value="" /></label></td>
-                          </tr>
-                        </tbody>
-                      </table>
+                      <form name="campararForm">
+                        <table class="table table-striped table-bordered table-hover" id="dataTables-example">
+                          <thead>
+                              <tr>
+                                <th>Nome do Projeto:</th>
+                                <th>Selecionar:</th>
+                              </tr>
+                          </thead>
+                          <tbody>
+                              <tr class="">
+                                <td>Aurora</td>
+                                <td><input type="radio" name="campararForm" value="" ></td>
+                              </tr>
+                              <tr class="">
+                                  <td>Blue Fenix</td>
+                                  <td><input type="radio" name="campararForm" value="" ></td>
+                              </tr>
+                              <tr class="">
+                                  <td>jMetrics</td>
+                                  <td><input type="radio" name="campararForm" value="" ></td>
+                              </tr>
+                          </tbody>
+                        </table>
+                        <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#comparar" aria-expanded="false" aria-controls="comparar" id="compareButton">Comparar</button>
+                      </form>
+                      
                     </div>
-                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#comparar" aria-expanded="false" aria-controls="comparar" id="compareButton">Comparar</button>
                   </div>
                 </div>
               <div class="collapse" id="comparar">
@@ -250,7 +253,6 @@
       <!-- CUSTOM SCRIPTS -->
     <script src="assets/js/custom.js"></script>
     <script src="assets/js/main.js"></script>
-    
    
 </body>
 </html>
