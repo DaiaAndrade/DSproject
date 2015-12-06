@@ -1,6 +1,6 @@
 html, body {
-    font-family: 'Open Sans', sans-serif;
-
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 20px;
     color:#444;
 }
 .navbar-default {
@@ -71,11 +71,11 @@ html, body {
 }
 
 section {
-    padding-top:80px;
+    padding-top:10px;
     padding-bottom:80px;
 }
 .pad-bottom {
-    padding-bottom:60px;
+    padding-bottom:40px;
 }
 
 /* =============================================================
@@ -132,12 +132,15 @@ section {
 #features-sec p {
         font-size: 20px;
         line-height: 35px;
-    }
+}
+
+ 
 /* =============================================================
   ABOUT SECTION STYLES
  ============================================================ */
 #about-sec {
-    background-color: #ededed;
+    background-color: rgba(107,164,232,0.2);
+    margin-top: 20px;
 }
 #about-sec img {
     max-height:150px;
@@ -154,9 +157,18 @@ section {
   CONTACT SECTION STYLES
  ============================================================ */
 #contact-sec {
-    background-color: #ededed;
+	background: url(../img/estatistica.jpg) no-repeat center center;
+    padding: 0px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    min-height: 300px;
+    color: #fff;
 }
 
+#contact-sec .overlay2{
+	background-color: rgba(0, 0, 0, 0.75);
+}
 /* =============================================================
   FOOTER SECTION STYLES
  ============================================================ */
