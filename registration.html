@@ -4,66 +4,111 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SIAMES : Home</title>
-	<!-- BOOTSTRAP STYLES-->
+  <!-- BOOTSTRAP STYLES-->
     <link href="assets/css/bootstrap.css" rel="stylesheet" />
      <!-- FONTAWESOME STYLES-->
     <link href="assets/css/font-awesome.css" rel="stylesheet" />
         <!-- CUSTOM STYLES-->
-    <link href="assets/css/custom.css" rel="stylesheet" />
+    <link href="assets/css/main.css" rel="stylesheet" />
      <!-- GOOGLE FONTS-->
    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 
 </head>
 <body>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
-        <div class="row text-center  ">
-            <div class="col-md-12">
-                <br /><br />
-                <h2> SIAMES : Cadastro</h2>
-                 <br />
-            </div>
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">
+              <img alt="Brand" src="assets/img/brandIcon.png">
+            </a>
         </div>
-         <div class="row">
-               
-                <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                        <strong>  Novo por aqui? Crie seu cadastro! </strong>  
-                            </div>
-                            <div class="panel-body">
-                                <form role="form">
-                                    <br/>
-                                        <div class="form-group input-group">
-                                            <span class="input-group-addon"><i class="fa fa-tag"  ></i></span>
-                                            <input type="text" class="form-control" placeholder="Nome" required />
-                                        </div>
-                                         <div class="form-group input-group">
-                                            <span class="input-group-addon">@</span>
-                                            <input type="text" class="form-control" placeholder="Email" required />
-                                        </div>
-                                      <div class="form-group input-group">
-                                            <span class="input-group-addon"><i class="fa fa-lock"  ></i></span>
-                                            <input type="password" class="form-control" placeholder="Senha" required />
-                                        </div>
-                                     <div class="form-group input-group">
-                                            <span class="input-group-addon"><i class="fa fa-lock"  ></i></span>
-                                            <input type="password" class="form-control" placeholder="Confirme sua senha" required />
-                                        </div>
-                                     
-                                     <a href="index.html" class="btn btn-primary">Cadastrar</a>
-                                    <hr />
-                                    Já tem cadastro?  <a href="login.html" >Login</a>
-                                    </form>
-                            </div>
-                           
-                        </div>
-                    </div>
-                
-                
+        <div class="navbar-collapse collapse" id="navbar-collapsible">
+          <ul class="nav navbar-nav navbar-right">
+              <li><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-facebook fa-2x"></i></a></li>
+              <li><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-twitter fa-2x"></i></a></li>
+              <li><a href="#" data-toggle="modal" data-target="#myModal"><i class="fa fa-github fa-2x"></i></a></li>
+          </ul>
         </div>
     </div>
+</nav>
+<div id="home-sec">
+  <div class="overlay">
+    <div class="container">
+      <div class="col-md-12" >
+        <div class="row text-center pad-bottom ">
+          <div class="col-md-8" id="logo">
+            <img src="assets/img/brandLogo.png" class="img-responsive center-block" alt="Responsive image">
+            <p id="nome">Sistema Avaliativo de Métricas de Software</p>
+          </div>
+          <div class="col-md-4" id="loginCampo">
+            <h1>Cadastro</h1>
+            <p>
+              <form role="form">
+                <br />
+                <div class="form-group input-group">
+                  <span class="input-group-addon"><i class="fa fa-tag"  ></i></span>
+                  <input type="text" class="form-control" placeholder="Nome" required />
+                </div>
+                <div class="form-group input-group">
+                  <span class="input-group-addon">@</span>
+                  <input type="text" class="form-control" placeholder="Email" required />
+                </div>
+                <div class="form-group input-group">
+                  <span class="input-group-addon"><i class="fa fa-lock"  ></i></span>
+                  <input type="password" class="form-control" placeholder="Senha" required />
+                </div>
+                <div class="form-group input-group">
+                  <span class="input-group-addon"><i class="fa fa-lock"  ></i></span>
+                  <input type="password" class="form-control" placeholder="Confirme sua senha" required />
+                </div>
+                <a href="index.html" class="btn btn-primary">Cadastrar</a>
+                <hr />
+                Já tem cadastro?  <a href="login.html" >Login</a>
+              </form>
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+  </div>     
+</div>
+<div class="features-sec">  
+  <div class="container">
+    <div class="row text-center pad-bottom">
+      <div class="col-md-12 text-center">
+        <h1>Funcionalidades</h1>
+        <p>
+           Entenda como nossa plataforma funciona.
+        </p>
+      </div>
+      </div>
+      <div class="row text-center">
+        <div class="col-md-4">
+          <i class="fa fa-desktop fa-5x"></i>
+          <h3>Ferramenta Desktop</h3>
+          <p>
+              Faça upload do seu projeto e gere seu arquivo .XML para ser avaliado.
+          </p>
+        </div> 
+        <div class="col-md-4">
+          <i class="fa fa-upload fa-5x"></i>
+          <h3>Upload Online</h3>
+          <p>
+            Através da nossa ferramenta online, você poderá aramazenar as métricas de seu projeto em nosso banco de dados e visualizar as métricas geradas.
+          </p>
+        </div> 
 
-
+        <div class="col-md-4">
+          <i class="fa fa-bar-chart-o fa-5x"></i>
+          <h3>Ferramenta de Comparação</h3>
+          <p>
+              Selecione seu projeto e compare com os de outros usuários de forma simples e rápida com projetos parecidos com o seu.
+          </p>
+        </div>     
+      </div>
+  </div>
+</div>
      <!-- SCRIPTS -AT THE BOTOM TO REDUCE THE LOAD TIME-->
     <!-- JQUERY SCRIPTS -->
     <script src="assets/js/jquery-1.10.2.js"></script>
@@ -73,15 +118,5 @@
     <script src="assets/js/jquery.metisMenu.js"></script>
       <!-- CUSTOM SCRIPTS -->
     <script src="assets/js/custom.js"></script>
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-38955291-1', 'auto');
-  ga('send', 'pageview');
-
-</script>
 </body>
 </html>

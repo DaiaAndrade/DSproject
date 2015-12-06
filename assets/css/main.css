@@ -1,3 +1,8 @@
+html, body {
+    font-family: 'Open Sans', sans-serif;
+
+    color:#444;
+}
 .navbar-default {
 	background-color: #6ba4e8;
   /*border-color: #4e7bb1;*/
@@ -57,83 +62,110 @@
   }
 }
 .navbar{
-	margin-bottom: 0;
+	border-bottom-width: 0px;
+    margin-bottom: 0px;
 }
-#MenuLinks, #PerfilLinks{
-	display: none;
-}
-/*.panel-info {
-	border-color: #6ba4e8;
-}
-.panel-info > .panel-heading {
-	color: #ecf0f1;
-	background-color: #6ba4e8;
-	border-color: #6ba4e8;
-}
-.panel-info > .panel-heading + .panel-collapse > .panel-body {
-	border-top-color: #6ba4e8;
-}
-.panel-info > .panel-heading .badge {
-	color: #6ba4e8;
-	background-color: #ecf0f1;
-}
-.panel-info > .panel-footer + .panel-collapse > .panel-body {
-	border-bottom-color: #6ba4e8;
-}*/
-/*
-.Menu, .Menu a, .Menu a:hover{
-	list-style-type: none;
-	text-align: center;
-	background-color: #4E7BB1;
-	color: #fff;
-	text-align: initial;
-}
-.MenuLinks, .MenuLinks a, .MenuLinks a:hover{
-	background-color: #ecf0f1;
-	text-decoration: none;
-	color: #fff;
-	list-style-type: none;
-	text-align: center;
-}
-/*
-.sidebar ul li{
-	padding: 10px;
-}
-.sidebar ul li a{
-	text-decoration: none;
-	color: #4E7BB1;
-}
-.sidebar ul li:hover{
-	background-color: #ecf0f1;
-	text-decoration: none;
-	color: #fff;
-}
-.sidebar ul li.Title, .sidebar ul li.Title a{
-	background-color: #4E7BB1;
-	color: #fff;
-	text-align: initial;
-	text-transform: uppercase;
-}
-.col-md-2{
-	padding-left: 0px;
-	margin: -20px 0px 0px -40px;
-}
-
-.sidebar li:hover{
-	background-color: #4E7BB1;
-	text-decoration: none;
-	color: #fff;
-}
-.sidebar li.Title{
-	background-color: #4E7BB1;
-	color: #fff;
-	text-align: none;
-}
-.sidebar li.active{
-	background-color: #ecf0f1;
-	color: #fff;
-}*/
 
 .navbar-brand img{
 	margin: -10px -5px;
+}
+
+section {
+    padding-top:80px;
+    padding-bottom:80px;
+}
+.pad-bottom {
+    padding-bottom:60px;
+}
+
+/* =============================================================
+  HOME SECTION STYLES
+ ============================================================ */
+
+#home-sec {
+    background: url(../img/estatistica.jpg) no-repeat center center;
+    padding: 0px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    -moz-background-size: cover;
+    min-height: 300px;
+    color: #fff;
+}
+
+    #home-sec .overlay {
+        background-color: rgba(0, 0, 0, 0.75);
+        min-height:500px;
+    }
+
+    #home-sec h1 {
+        line-height: 60px;
+        font-size: 45px;
+        font-weight: 900;
+        padding-top:80px;
+        margin-top: 30px;
+    	margin-bottom: 0px;
+    }
+
+#home-sec p {
+    line-height: 30px;
+    color: #E0E0E0;
+    font-size: 16px;
+}
+#home-se .container{
+	margin-top: 58px;
+}
+
+.col-md-8 .center-block{
+	padding-top: 100px;
+	margin-top: 30px;
+}
+#nome{
+	margin-top: 40px;
+	background: rgba(255,255,255,0.2);
+	border-radius: 5px;
+
+}
+
+/* =============================================================
+  FEATURES SECTION STYLES
+ ============================================================ */
+#features-sec p {
+        font-size: 20px;
+        line-height: 35px;
+    }
+/* =============================================================
+  ABOUT SECTION STYLES
+ ============================================================ */
+#about-sec {
+    background-color: #ededed;
+}
+#about-sec img {
+    max-height:150px;
+    padding-bottom:10px;
+}
+/* =============================================================
+  DESCRIPTION SECTION STYLES
+ ============================================================ */
+    #description-sec p {
+        font-size: 20px;
+        line-height: 35px;
+    }
+/* =============================================================
+  CONTACT SECTION STYLES
+ ============================================================ */
+#contact-sec {
+    background-color: #ededed;
+}
+
+/* =============================================================
+  FOOTER SECTION STYLES
+ ============================================================ */
+footer {
+    padding: 20px;
+    font-size: 15px;
+}
+
+footer a, footer a:hover {
+    color: rgba(0, 0, 0, 0.75);
+    text-decoration: none;
 }
